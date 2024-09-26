@@ -1,7 +1,7 @@
 'use client'
 
 import React from 'react'
-import { Zap, CalendarDays, MapPin , Clock } from 'lucide-react'
+import { MapPin , Clock } from 'lucide-react'
 import { Button } from "@/components/ui/button"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 
