@@ -1,13 +1,79 @@
 'use client'
 
 import React from 'react'
-import { Zap, CalendarDays, MapPin } from 'lucide-react'
+import { Zap, CalendarDays, MapPin , Clock } from 'lucide-react'
 import { Button } from "@/components/ui/button"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 
 export function LocalHackWeekJsx() {
-  const days = ['Day 1', 'Day 2', 'Day 3', 'Day 4', 'Day 5', 'Day 6', 'Day 7', 'Day 8']
-  const [activeDay, setActiveDay] = React.useState('Day 7')
+  const days = [
+    { 
+      day: 'Day 1', 
+      events: [
+        { title: 'Opening Ceremony', time: '09:00 AM', date: '30-09-2024', location: 'CET-3 LAB' },
+        { title: 'Git and Github', time: '10:00 AM', date: '30-09-2024', location: 'CET-3 LAB' },
+        { title: 'Bash Scripting', time: '1:00 PM', date: '30-09-2024', location: 'CET-3 LAB' }
+      ] 
+    },
+    { 
+      day: 'Day 2', 
+      events: [
+        { title: 'ML Workshop', time: '10:00 AM', date: '01-10-2024', location: 'CET-3 LAB' },
+        { title: 'Streamlit', time: '1:00 PM', date: '01-10-2024', location: 'CET-3 LAB' }
+      ] 
+    },
+    { 
+      day: 'Day 3', 
+      events: [
+        { title: 'Intro to Cloud', time: '10:00 AM', date: '02-10-2024', location: 'Online' },
+        { title: 'HardWare Session', time: '1:00 PM', date: '02-10-2024', location: 'Online' }
+      ] 
+    },
+    { 
+      day: 'Day 4', 
+      events: [
+        { title: 'APIs', time: '10:00 AM', date: '03-10-2024', location: 'CET-3 LAB' },
+        { title: 'DSA+Resume Building', time: '1:00 PM', date: '03-10-2024', location: 'SH-2' }
+      ] 
+    },
+    { 
+      day: 'Day 5', 
+      events: [
+        { title: 'Open Source', time: '10:00 AM', date: '04-10-2024', location: 'SH-2' },
+        { title: 'Why Hackathons?', time: '1:00 PM', date: '04-10-2024', location: 'SH-2' }
+      ] 
+    },
+    { 
+      day: 'Day 6', 
+      events: [
+        { title: 'How to use Docs/read codebase', time: '10:00 AM', date: '09-10-2024', location: 'Online' },
+        { title: 'AI Toolz', time: '1:00 PM', date: '09-10-2024', location: 'Online' }
+      ] 
+    },
+    { 
+      day: 'Day 7', 
+      events: [
+        { title: 'ChatBot', time: '10:00 AM', date: '10-10-2024', location: 'Online' },
+        { title: 'APIs', time: '1:00 PM', date: '10-10-2024', location: 'Online' }
+      ] 
+    },
+    { 
+      day: 'Day 8', 
+      events: [
+        { title: 'WebDev', time: '10:00 AM', date: '11-10-2024', location: 'Online' },
+        { title: 'Closing Ceremony', time: '1:00 PM', date: '11-10-2024', location: 'Online' }
+      ] 
+    },
+    // Add more days and events as needed
+  ];
+  
+  const [activeDay, setActiveDay] = React.useState(days[0].day); // Default to the first day
+  const [activeEvents, setActiveEvents] = React.useState(days[0].events); // Default events
+
+  const handleDayClick = (day) => {
+    setActiveDay(day.day);
+    setActiveEvents(day.events);
+  };
 
   return (
     <div className="min-h-screen bg-gray-900 text-white relative overflow-hidden">
@@ -31,7 +97,7 @@ export function LocalHackWeekJsx() {
         <header className="flex justify-between items-center p-5">
           <div className="h-12 ml-8">
             <img 
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot_2024-09-25_223237-removebg-preview-opvnvTMi6pzoFTGzti9YVUbZMk5CzC.png" 
+              src="https://i.ibb.co/gyKNL2p/Screenshot-2024-09-25-223237-removebg-preview.png" 
               alt="LHW Logo" 
               className="h-full"
             />
@@ -40,6 +106,7 @@ export function LocalHackWeekJsx() {
             <a href="#schedule" className="text-white hover:text-yellow-400">Schedule</a>
             <a href="#faq" className="text-white hover:text-yellow-400">FAQ</a>
             <Button 
+              onClick={() => window.open('https://lnxok5i37d8.typeform.com/to/e6A1y0Fu', '_blank')} // Redirect to the link
               className="bg-[#C9D9EB] text-black hover:bg-transparent hover:text-[#BDC8D4] hover:border-[#C9D9EB] border-2 border-transparent transition-all duration-300"
             >
               Register
@@ -50,7 +117,7 @@ export function LocalHackWeekJsx() {
         <main className="container mx-auto px-4 py-8">
           <img 
               src="https://i.ibb.co/Bj3BSGf/Group-156-removebg-preview.png" 
-              alt="LHW Logo" 
+              alt="Local Hack Week" 
               className="w-full max-w-5xl mx-auto mb-0" // Removed bottom margin
             />
 
@@ -82,30 +149,35 @@ export function LocalHackWeekJsx() {
             <div className="flex flex-wrap justify-center gap-2 mb-8">
               {days.map((day) => (
                 <Button
-                  key={day}
-                  variant={activeDay === day ? "default" : "secondary"}
-                  onClick={() => setActiveDay(day)}
-                  className={`${activeDay === day ? "bg-yellow-400 text-black" : "bg-gray-700"} transition-all duration-300 ease-in-out hover:scale-105`}
+                  key={day.day}
+                  variant={activeDay === day.day ? "default" : "secondary"}
+                  onClick={() => handleDayClick(day)}
+                  className={`${activeDay === day.day ? "bg-yellow-400 text-black" : "bg-gray-700"} transition-all duration-300 ease-in-out hover:scale-105`}
                 >
-                  {day}
+                  {day.day}
                 </Button>
               ))}
             </div>
 
-            <div className="bg-gray-800 bg-opacity-80 rounded-lg p-6 backdrop-blur-sm max-w-md mx-auto">
-              <div className="flex items-center mb-4">
-                <CalendarDays className="mr-2" />
-                <span>Sep 11, 2024</span>
-                <span className="ml-4">9:30pm IST</span>
-              </div>
-              <div className="flex items-center mb-4">
-                <MapPin className="mr-2" />
-                <span>Virtual Event</span>
-              </div>
-              <h3 className="text-2xl font-bold mb-4">Today in Global Hack Week {activeDay}</h3>
-              <p className="mb-4">
-                Tune in to hear everything going on today at GHW! At this stream, you'll hear about which workshops are coming up and have a chance to get any questions you have answered!
-              </p>
+            <div className="grid grid-cols-1 gap-4 max-w-md mx-auto">
+              {activeEvents.map((event, index) => (
+                <div key={index} className="bg-gray-800 p-4 rounded-lg shadow-md">
+                  <h3 className="text-lg font-bold text-[#FED140]">{event.title}</h3>
+                  <div className="flex items-center text-sm text-[#C9D9EB] mb-2"> {/* Flex container for date, time, and location */}
+                    <span className="flex items-center mr-4"> {/* Date */}
+                      <span>{event.date}</span>
+                    </span>
+                    <span className="flex items-center mr-4"> {/* Time icon */}
+                      <Clock className="mr-1" />
+                      {event.time}
+                    </span>
+                    <span className="flex items-center"> {/* Location icon */}
+                      <MapPin className="mr-1" />
+                      {event.location}
+                    </span>
+                  </div>
+                </div>
+              ))}
             </div>
           </section>
 
