@@ -150,9 +150,10 @@ export function LocalHackWeekJsx() {
               {days.map((day) => (
                 <Button
                   key={day.day}
-                  variant={activeDay === day.day ? "default" : "secondary"}
                   onClick={() => handleDayClick(day)}
-                  className={`${activeDay === day.day ? "bg-yellow-400 text-black" : "bg-gray-700"} transition-all duration-300 ease-in-out hover:scale-105`}
+                  className={`${
+                    activeDay === day.day ? "bg-[#FED140] text-black" : "bg-[#C9D9EB] text-black"
+                  }`} // Directly set colors without any variant
                 >
                   {day.day}
                 </Button>
