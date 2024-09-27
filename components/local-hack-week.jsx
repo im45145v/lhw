@@ -132,7 +132,7 @@ export function LocalHackWeekJsx() {
             <div className="max-w-md mx-auto"> {/* Set a max width for alignment */}
               <h2 className="text-3xl font-bold mb-4 font-manrope text-[#FED140]">About Local Hack Week</h2>
               <p className="text-lg mb-4 text-justify text-[#C9D9EB]"> {/* Justified text */}
-                Local Hack Week is a week-long hackathon that brings together developers, designers, and innovators from all over the world. It &apos; s an opportunity to learn new skills, build amazing projects, and connect with like-minded individuals passionate about technology.
+                Local Hack Week is a week-long hackathon that brings together developers, designers, and innovators. It&apos;s an opportunity to learn new skills, build amazing projects, and connect with like-minded individuals passionate about technology.
               </p>
               <p className="text-lg text-justify text-[#C9D9EB]"> {/* Justified text */}
                 Whether youre a beginner or an experienced hacker, Local Hack Week has something for everyone. Join us for an exciting week of coding, creativity, and collaboration!
@@ -148,15 +148,15 @@ export function LocalHackWeekJsx() {
 
             <div className="flex flex-wrap justify-center gap-2 mb-8">
               {days.map((day) => (
-                <Button
+                <div
                   key={day.day}
                   onClick={() => handleDayClick(day)}
-                  className={`${
+                  className={`cursor-pointer p-2 rounded-lg ${
                     activeDay === day.day ? "bg-[#FED140] text-black" : "bg-[#C9D9EB] text-black"
-                  }`} // Directly set colors without any variant
+                  }`} // Use div for static colors
                 >
                   {day.day}
-                </Button>
+                </div>
               ))}
             </div>
 
