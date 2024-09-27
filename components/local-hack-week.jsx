@@ -187,7 +187,7 @@ export function LocalHackWeekJsx() {
               <AccordionItem value="item-1">
                 <AccordionTrigger className="text-[#C9D9EB]">What is Local Hack Week?</AccordionTrigger>
                 <AccordionContent className="text-[#FED140]">
-                  Local Hack Week is a week-long hackathon event where participants from around the world come together to learn, build, and share their projects.
+                  Local Hack Week is a week-long hackathon event where participants come together to learn, build, and share their projects.
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-2">
