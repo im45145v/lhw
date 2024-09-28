@@ -103,7 +103,7 @@ export function LocalHackWeekJsx() {
 
       {/* Content */}
       <div className="relative z-10">
-        <header className="flex justify-between items-center p-5 sm:p-2 md:p-7">
+        <header className="flex justify-between items-center p-12 sm:p-5 md:p-8">
           <div className="h-10 md:h-auto md:max-h-12 ml-8"> 
             <a href="/">
               <img 
@@ -113,17 +113,17 @@ export function LocalHackWeekJsx() {
               />
             </a>
           </div>
-          <nav className="flex items-center space-x-3 mr-8"> {/* Adjusted spacing for buttons */}
-          <a href="#schedule" className="text-white hover:text-yellow-400 text-xs md:text-sm">Schedule</a>
+          <nav className="flex items-center space-x-4 mr-8"> {/* Increased space between buttons */}
+            <a href="#schedule" className="text-white hover:text-yellow-400 text-xs md:text-sm">Schedule</a>
             <Button 
               onClick={() => window.open('https://lnxok5i37d8.typeform.com/to/e6A1y0Fu', '_blank')} 
-              className="bg-[#C9D9EB] text-black hover:bg-transparent hover:text-[#BDC8D4] hover:border-[#C9D9EB] border-2 border-transparent transition-all duration-300 h-7 px-2 sm:h-8 sm:px-3" 
+              className="bg-[#C9D9EB] text-black hover:bg-transparent hover:text-[#BDC8D4] border-2 border-transparent transition-all duration-300 h-8 px-4 sm:h-9 sm:px-5" 
             >
               Register
             </Button>
             <Button 
               onClick={() => window.open('https://chat.whatsapp.com/IEsumqsXO0PB15tE4WRSTz', '_blank')}
-              className="border-2 border-[#C9D9EB] text-[#C9D9EB] bg-transparent transition-all duration-300 h-7 px-2 sm:h-8 sm:px-3 hover:bg-[#C9D9EB] hover:text-black"
+              className="border-2 border-[#C9D9EB] text-[#C9D9EB] bg-transparent transition-all duration-300 h-8 px-4 sm:h-9 sm:px-5 hover:bg-[#C9D9EB] hover:text-black"
             >
               WhatsApp
             </Button>
