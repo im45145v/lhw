@@ -103,13 +103,13 @@ export function LocalHackWeekJsx() {
 
       {/* Content */}
       <div className="relative z-10">
-        <header className="flex justify-between items-center p-5">
-          <div className="h-10 md:h-auto md:max-h-12 ml-8"> {/* Adjusted height for smaller screens */}
+        <header className="flex justify-between items-center p-3">
+          <div className="h-10 md:h-auto md:max-h-12 ml-8"> 
             <a href="/">
               <img 
                 src="https://i.ibb.co/gyKNL2p/Screenshot-2024-09-25-223237-removebg-preview.png" 
                 alt="LHW Logo" 
-                className="h-full md:h-auto md:max-h-12 h-10 left-0" // Added absolute positioning and left-0 for small screens
+                className="h-8 sm:h-10 md:max-h-12 w-auto" // Adjusted height for smaller screens
               />
             </a>
           </div>
