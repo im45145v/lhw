@@ -76,6 +76,7 @@ export function LocalHackWeekJsx() {
   };
 
   return (
+    
     <div className="min-h-screen bg-gray-900 text-white relative overflow-hidden">
       {/* Animated background */}
       <div className="absolute inset-0 z-0">
@@ -96,11 +97,13 @@ export function LocalHackWeekJsx() {
       <div className="relative z-10">
         <header className="flex justify-between items-center p-5">
           <div className="h-12 ml-8">
-            <img 
-              src="https://i.ibb.co/gyKNL2p/Screenshot-2024-09-25-223237-removebg-preview.png" 
-              alt="LHW Logo" 
-              className="h-full"
-            />
+            <a href="/">
+              <img 
+                src="https://i.ibb.co/gyKNL2p/Screenshot-2024-09-25-223237-removebg-preview.png" 
+                alt="LHW Logo" 
+                className="h-full"
+              />
+            </a>
           </div>
           <nav className="flex items-center space-x-8 mr-8">
             <a href="#schedule" className="text-white hover:text-yellow-400">Schedule</a>
@@ -118,10 +121,10 @@ export function LocalHackWeekJsx() {
           <img 
               src="https://i.ibb.co/Bj3BSGf/Group-156-removebg-preview.png" 
               alt="Local Hack Week" 
-              className="w-full max-w-5xl mx-auto mb-0" // Removed bottom margin
+              className="w-full max-w-5xl mx-auto mb-0 -mt-20" // Added negative top margin
             />
 
-          <section id="intro" className="mb-16 flex flex-col md:flex-row items-center justify-between">
+          <section id="intro" className="mb-16 flex flex-col md:flex-row items-center justify-between -mt-10">
             <div className="md:w-1/2 mb-8 md:mb-0">
               <img 
                 src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot_2024-09-26_211158-removebg-preview-vpCfjXc3CqtWyHty4Ouy2NlErOR2S6.png" 
@@ -132,11 +135,12 @@ export function LocalHackWeekJsx() {
             <div className="max-w-md mx-auto"> {/* Set a max width for alignment */}
               <h2 className="text-3xl font-bold mb-4 font-manrope text-[#FED140]">About Local Hack Week</h2>
               <p className="text-lg mb-4 text-justify text-[#C9D9EB]"> {/* Justified text */}
-                Local Hack Week is a week-long hackathon that brings together developers, designers, and innovators. It&apos;s an opportunity to learn new skills, build amazing projects, and connect with like-minded individuals passionate about technology.
+              Inspired by <span className='text-[#FCEE90]'>MLH</span> Global Hack Week, Local Hack Week is a week-long event that brings together developers, designers, and innovators.
               </p>
-              <p className="text-lg text-justify text-[#C9D9EB]"> {/* Justified text */}
-                Whether youre a beginner or an experienced hacker, Local Hack Week has something for everyone. Join us for an exciting week of coding, creativity, and collaboration!
+              <p className="text-lg mb-4 text-justify text-[#C9D9EB]">
+              It's an opportunity to learn new skills, build amazing projects, and connect with like-minded individuals passionate about technology. Completely free and open to anyone, anywhere join us for an exciting week of coding, creativity, and collaboration!
               </p>
+              
             </div>
           </section>
 
@@ -151,7 +155,7 @@ export function LocalHackWeekJsx() {
                 <div
                   key={day.day}
                   onClick={() => handleDayClick(day)}
-                  className={`cursor-pointer p-2 rounded-lg ${
+                  className={`cursor-pointer p-2 rounded-lg select-none ${
                     activeDay === day.day ? "bg-[#FED140] text-black" : "bg-[#C9D9EB] text-black"
                   }`} // Use div for static colors
                 >
@@ -188,7 +192,7 @@ export function LocalHackWeekJsx() {
               <AccordionItem value="item-1">
                 <AccordionTrigger className="text-[#C9D9EB]">What is Local Hack Week?</AccordionTrigger>
                 <AccordionContent className="text-[#FED140]">
-                  Local Hack Week is a week-long hackathon event where participants come together to learn, build, and share their projects.
+                Local Hack Week is a week-long event that brings together developers, designers, and innovators.
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-2">
@@ -208,7 +212,7 @@ export function LocalHackWeekJsx() {
         </main>
 
         <footer className="text-center p-4">
-          <p>&copy; 2024 Local Hack Week. All rights reserved.</p>
+          <p>&copy; 2024 Local Hack Week.</p>
         </footer>
       </div>
     </div>
