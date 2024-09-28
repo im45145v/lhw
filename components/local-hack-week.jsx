@@ -104,7 +104,7 @@ export function LocalHackWeekJsx() {
       {/* Content */}
       <div className="relative z-10">
         <header className="flex justify-between items-center p-5">
-          <div className="h-12 ml-8">
+          <div className="h-10 md:h-12 ml-8"> {/* Adjusted height for smaller screens */}
             <a href="/">
               <img 
                 src="https://i.ibb.co/gyKNL2p/Screenshot-2024-09-25-223237-removebg-preview.png" 
@@ -113,15 +113,16 @@ export function LocalHackWeekJsx() {
               />
             </a>
           </div>
-          <nav className="flex items-center space-x-8 mr-8">
-            <a href="#schedule" className="text-white hover:text-yellow-400">Schedule</a>
-            <a href="#faq" className="text-white hover:text-yellow-400">FAQ</a>
+          <nav className="flex items-center space-x-4 mr-8"> {/* Adjusted spacing for buttons */}
+          <a href="#schedule" className="text-white hover:text-yellow-400 text-xs md:text-sm">Schedule</a>
+          <a href="#faq" className="text-white hover:text-yellow-400 text-xs md:text-sm">FAQ</a>
             <Button 
               onClick={() => window.open('https://lnxok5i37d8.typeform.com/to/e6A1y0Fu', '_blank')} 
-              className="bg-[#C9D9EB] text-black hover:bg-transparent hover:text-[#BDC8D4] hover:border-[#C9D9EB] border-2 border-transparent transition-all duration-300"
+              className="bg-[#C9D9EB] text-black hover:bg-transparent hover:text-[#BDC8D4] hover:border-[#C9D9EB] border-2 border-transparent transition-all duration-300 h-8 px-3 sm:h-10 sm:px-4" 
             >
               Register
             </Button>
+            
           </nav>
         </header>
 
@@ -150,7 +151,7 @@ export function LocalHackWeekJsx() {
               </p>
               <Button 
               onClick={() => window.open('https://chat.whatsapp.com/IEsumqsXO0PB15tE4WRSTz', '_blank')}
-              className="bg-[#FED140] text-black hover:bg-transparent hover:text-[#BDC8D4] hover:border-[#FED140] border-2 border-transparent transition-all duration-300"
+              className="bg-[#FED140] text-black hover:bg-transparent hover:text-[#BDC8D4] hover:border-[#FED140] border-2 border-transparent transition-all duration-300 h-8 px-3 sm:h-10 sm:px-4" 
             >
               WhatsApp
             </Button>
