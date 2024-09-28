@@ -117,7 +117,7 @@ export function LocalHackWeekJsx() {
             <a href="#schedule" className="text-white hover:text-yellow-400">Schedule</a>
             <a href="#faq" className="text-white hover:text-yellow-400">FAQ</a>
             <Button 
-              onClick={() => window.open('https://lnxok5i37d8.typeform.com/to/e6A1y0Fu', '_blank')} // Redirect to the link
+              onClick={() => window.open('https://lnxok5i37d8.typeform.com/to/e6A1y0Fu', '_blank')} 
               className="bg-[#C9D9EB] text-black hover:bg-transparent hover:text-[#BDC8D4] hover:border-[#C9D9EB] border-2 border-transparent transition-all duration-300"
             >
               Register
@@ -129,7 +129,7 @@ export function LocalHackWeekJsx() {
           <img 
               src="https://i.ibb.co/Bj3BSGf/Group-156-removebg-preview.png" 
               alt="Local Hack Week" 
-              className="w-full max-w-5xl mx-auto mb-0 -mt-20" // Added negative top margin
+              className="w-full max-w-5xl mx-auto mb-0 -mt-20" 
             />
 
           <section id="intro" className="mb-16 flex flex-col md:flex-row items-center justify-between -mt-10">
@@ -140,9 +140,9 @@ export function LocalHackWeekJsx() {
                 className="w-64.5 h-64.5 mx-auto"
               />
             </div>
-            <div className="max-w-md mx-auto"> {/* Set a max width for alignment */}
+            <div className="max-w-md mx-auto"> 
               <h2 className="text-3xl font-bold mb-4 font-manrope text-[#FED140]">About Local Hack Week</h2>
-              <p className="text-lg mb-4 text-justify text-[#C9D9EB]"> {/* Justified text */}
+              <p className="text-lg mb-4 text-justify text-[#C9D9EB]"> 
               Inspired by <span className='text-[#FCEE90]'>MLH</span> Global Hack Week, Local Hack Week is a week-long event that brings together developers, designers, and innovators.
               </p>
               <p className="text-lg mb-4 text-justify text-[#C9D9EB]">
@@ -153,7 +153,7 @@ export function LocalHackWeekJsx() {
           </section>
 
           <section id="schedule" className="mb-16">
-            <h2 className="text-3xl font-bold mb-4 text-center font-manrope text-[#FED140] max-w-md mx-auto">Schedule</h2> {/* Set max width */}
+            <h2 className="text-3xl font-bold mb-4 text-center font-manrope text-[#FED140] max-w-md mx-auto">Schedule</h2> 
             <p className="text-lg mb-4 text-center text-[#C9D9EB] max-w-xl mx-auto">
               Everyday we have a variety of live sessions for you to tune into and learn more about. Click below to see each day&apos;s schedule.
             </p>
@@ -176,7 +176,7 @@ export function LocalHackWeekJsx() {
               {activeEvents.map((event, index) => (
                 <div key={index} className="bg-gray-800 p-4 rounded-lg shadow-md">
                   <h3 className="text-lg font-bold text-[#FED140]">{event.title}</h3>
-                  <div className="flex items-center text-sm text-[#C9D9EB] mb-2"> {/* Flex container for date, time, and location */}
+                  <div className="flex items-center text-sm text-[#C9D9EB] mb-2"> 
                     <span className="flex items-center mr-4"> {/* Date */}
                       <span>{event.date}</span>
                     </span>
