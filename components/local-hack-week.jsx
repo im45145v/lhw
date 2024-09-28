@@ -103,7 +103,7 @@ export function LocalHackWeekJsx() {
 
       {/* Content */}
       <div className="relative z-10">
-        <header className="flex justify-between items-center p-3">
+        <header className="flex justify-between items-center p-5 sm:p-2 md:p-7">
           <div className="h-10 md:h-auto md:max-h-12 ml-8"> 
             <a href="/">
               <img 
