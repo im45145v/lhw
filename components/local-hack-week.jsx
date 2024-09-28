@@ -138,7 +138,7 @@ export function LocalHackWeekJsx() {
               Inspired by <span className='text-[#FCEE90]'>MLH</span> Global Hack Week, Local Hack Week is a week-long event that brings together developers, designers, and innovators.
               </p>
               <p className="text-lg mb-4 text-justify text-[#C9D9EB]">
-              It's an opportunity to learn new skills, build amazing projects, and connect with like-minded individuals passionate about technology. Completely free and open to anyone, anywhere join us for an exciting week of coding, creativity, and collaboration!
+              It&apos;s an opportunity to learn new skills, build amazing projects, and connect with like-minded individuals passionate about technology. Completely free and open to anyone, anywhere join us for an exciting week of coding, creativity, and collaboration!
               </p>
               
             </div>
