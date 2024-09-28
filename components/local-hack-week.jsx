@@ -113,18 +113,18 @@ export function LocalHackWeekJsx() {
               />
             </a>
           </div>
-          <nav className="flex items-center space-x-8 mr-8">
-            <a href="#schedule" className="text-white hover:text-yellow-400">Schedule</a>
-            <a href="#faq" className="text-white hover:text-yellow-400">FAQ</a>
+          <nav className="flex flex-row items-center space-x-4 mr-8">
+            <a href="#schedule" className="text-white hover:text-yellow-400 text-sm md:text-base">Schedule</a>
+            <a href="#faq" className="text-white hover:text-yellow-400 text-sm md:text-base">FAQ</a>
             <Button 
               onClick={() => window.open('https://lnxok5i37d8.typeform.com/to/e6A1y0Fu', '_blank')} //register
-              className="bg-[#C9D9EB] text-black hover:bg-transparent hover:text-[#BDC8D4] hover:border-[#C9D9EB] border-2 border-transparent transition-all duration-300"
+              className="bg-[#C9D9EB] text-black hover:bg-transparent hover:text-[#BDC8D4] hover:border-[#C9D9EB] border-2 border-transparent transition-all duration-300 text-sm md:text-base"
             >
               Register
             </Button>
             <Button 
               onClick={() => window.open('https://chat.whatsapp.com/IEsumqsXO0PB15tE4WRSTz', '_blank')} // whatsapp
-              className="border-2 border-[#C9D9EB] text-[#C9D9EB] bg-transparent hover:bg-[#C9D9EB] hover:text-black transition-all duration-300 rounded-md"
+              className="border-2 border-[#C9D9EB] text-[#C9D9EB] bg-transparent hover:bg-[#C9D9EB] hover:text-black transition-all duration-300 rounded-md text-sm md:text-base"
             >
               WhatsApp
             </Button>
