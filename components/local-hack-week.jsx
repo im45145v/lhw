@@ -103,17 +103,17 @@ export function LocalHackWeekJsx() {
 
       {/* Content */}
       <div className="relative z-10">
-        <header className="flex justify-between items-center p-12 sm:p-5 md:p-8">
-          <div className="h-10 md:h-auto md:max-h-12 ml-8"> 
+        <header className="flex justify-between items-center p-12 sm:p-5 md:p-8 mx-1">
+          <div className="h-10 md:h-auto md:max-h-12"> 
             <a href="/">
               <img 
                 src="https://i.ibb.co/gyKNL2p/Screenshot-2024-09-25-223237-removebg-preview.png" 
                 alt="LHW Logo" 
-                className="h-8 sm:h-10 md:max-h-12 w-auto" // Adjusted height for smaller screens
+                className="h-8 sm:h-10 md:max-h-12 w-auto" 
               />
             </a>
           </div>
-          <nav className="flex items-center space-x-2 mr-8"> {/* Adjusted spacing for buttons */}
+          <nav className="flex items-center space-x-2"> {/* Removed mr-8 to reduce right gap */}
             <a href="#schedule" className="text-white hover:text-yellow-400 text-xs md:text-sm">Schedule</a>
             <Button 
               onClick={() => window.open('https://lnxok5i37d8.typeform.com/to/e6A1y0Fu', '_blank')} 
@@ -127,7 +127,6 @@ export function LocalHackWeekJsx() {
             >
               WhatsApp
             </Button>
-            
           </nav>
         </header>
 
