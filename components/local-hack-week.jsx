@@ -123,7 +123,7 @@ export function LocalHackWeekJsx() {
             </Button>
             <Button 
               onClick={() => window.open('https://chat.whatsapp.com/IEsumqsXO0PB15tE4WRSTz', '_blank')}
-              className="bg-[#FED140] text-black hover:bg-transparent hover:text-[#BDC8D4] hover:border-[#FED140] border-2 border-transparent transition-all duration-300 h-7 px-2 sm:h-8 sm:px-3" 
+              className="border-2 border-[#C9D9EB] text-[#C9D9EB] bg-transparent transition-all duration-300 h-7 px-2 sm:h-8 sm:px-3 hover:bg-[#C9D9EB] hover:text-black"
             >
               WhatsApp
             </Button>
