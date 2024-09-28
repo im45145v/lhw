@@ -8,57 +8,65 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 export function LocalHackWeekJsx() {
   const days = [
     { 
-      day: 'Day 1', 
+      day: 'Sep 30th', 
       events: [
-        { title: 'Opening Ceremony', time: '09:00 AM', date: '30-09-2024', location: 'CET-3 LAB' },
-        { title: 'Git and Github', time: '10:00 AM', date: '30-09-2024', location: 'CET-3 LAB' },
-        { title: 'Bash Scripting', time: '1:00 PM', date: '30-09-2024', location: 'CET-3 LAB' }
+        { title: 'Opening Ceremony', time: '09:30 AM', date: '30-09-2024', location: 'CET-3 LAB' },
+        { title: 'Streamlit', time: '10:30 AM', date: '30-09-2024', location: 'CET-3 LAB' },
+        { title: 'Git and Github', time: '1:15 PM', date: '30-09-2024', location: 'CET-1 LAB' }
+        
       ] 
     },
     { 
-      day: 'Day 2', 
+      day: 'Oct 1st', 
       events: [
-        { title: 'ML Workshop', time: '10:00 AM', date: '01-10-2024', location: 'CET-3 LAB' },
-        { title: 'Streamlit', time: '1:00 PM', date: '01-10-2024', location: 'CET-3 LAB' }
+        { title: 'Bash Scripting', time: '09:30 AM', date: '01-10-2024', location: 'CET-2 LAB' },
+        { title: 'ML Workshop', time: '01:00 PM', date: '01-10-2024', location: 'CET-3 LAB' }
+        
       ] 
     },
     { 
-      day: 'Day 3', 
+      day: 'Oct 2nd', 
       events: [
-        { title: 'Intro to Cloud', time: '10:00 AM', date: '02-10-2024', location: 'Online' },
-        { title: 'HardWare Session', time: '1:00 PM', date: '02-10-2024', location: 'Online' }
+        { title: 'Intro to Cloud', time: '2:00 PM', date: '02-10-2024', location: 'Online' }
       ] 
     },
     { 
-      day: 'Day 4', 
+      day: 'Oct 3rd', 
       events: [
-        { title: 'APIs', time: '10:00 AM', date: '03-10-2024', location: 'CET-3 LAB' },
+        { title: 'Intro to APIs', time: '10:00 AM', date: '03-10-2024', location: 'CET-3 LAB' },
         { title: 'DSA+Resume Building', time: '1:00 PM', date: '03-10-2024', location: 'SH-2' }
       ] 
     },
     { 
-      day: 'Day 5', 
+      day: 'Oct 4th', 
       events: [
         { title: 'Open Source', time: '10:00 AM', date: '04-10-2024', location: 'SH-2' },
         { title: 'Why Hackathons?', time: '1:00 PM', date: '04-10-2024', location: 'SH-2' }
       ] 
     },
     { 
-      day: 'Day 6', 
+      day: 'Oct 5th', 
+      events: [
+        { title: 'How to Build better hacks at hackathons', time: '12:00 PM', date: '05-10-2024', location: 'Online' }
+      ] 
+    },
+    { 
+      day: 'Oct 9th', 
       events: [
         { title: 'How to use Docs/read codebase', time: '10:00 AM', date: '09-10-2024', location: 'Online' },
         { title: 'AI Toolz', time: '1:00 PM', date: '09-10-2024', location: 'Online' }
       ] 
     },
     { 
-      day: 'Day 7', 
+      day: 'Oct 10th', 
       events: [
         { title: 'ChatBot', time: '10:00 AM', date: '10-10-2024', location: 'Online' },
-        { title: 'APIs', time: '1:00 PM', date: '10-10-2024', location: 'Online' }
+        { title: 'HardWare Session', time: '01:00 PM', date: '10-10-2024', location: 'Online' },
+        //{ title: 'APIs', time: '1:00 PM', date: '10-10-2024', location: 'Online' }
       ] 
     },
     { 
-      day: 'Day 8', 
+      day: 'Oct 11th', 
       events: [
         { title: 'WebDev', time: '10:00 AM', date: '11-10-2024', location: 'Online' },
         { title: 'Closing Ceremony', time: '1:00 PM', date: '11-10-2024', location: 'Online' }
