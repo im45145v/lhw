@@ -161,6 +161,9 @@ export function LocalHackWeekJsx() {
             <p className="text-lg mb-4 text-center text-[#C9D9EB] max-w-xl mx-auto">
               Everyday we have a variety of live sessions for you to tune into and learn more about. Click below to see each day&apos;s schedule.
             </p>
+            <p className="text-lg mb-4 text-center text-[#C9D9EB] max-w-xl mx-auto font-bold">
+        **Schedules and timings may change and will be updated on the website.**
+    </p>
 
             <div className="flex flex-wrap justify-center gap-2 mb-8">
               {days.map((day) => (
