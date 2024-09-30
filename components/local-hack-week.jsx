@@ -8,7 +8,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 export function LocalHackWeekJsx() {
   const days = [
     { 
-      day: 'Sep 30th', 
+      day: 'Sep 30ᵗʰ', 
       events: [
         { title: 'Opening Ceremony', time: '09:30 AM', date: '30-09-2024', location: 'CET-3 LAB' },
         { title: 'Streamlit', time: '10:30 AM', date: '30-09-2024', location: 'CET-3 LAB' },
@@ -17,9 +17,9 @@ export function LocalHackWeekJsx() {
       ] 
     },
     { 
-      day: 'Oct 1st', 
+      day: 'Oct 01ˢᵗ', 
       events: [
-        { title: 'Bash Scripting: Beginner&apos;s Guide', time: '09:30 AM', date: '01-10-2024', location: 'CET-3 LAB' },
+        { title: "Bash Scripting: Beginner's Guide", time: '09:30 AM', date: '01-10-2024', location: 'CET-3 LAB' },
         { title: 'A Glimpse into ML ', time: '01:00 PM', date: '01-10-2024', location: 'CET-3 LAB' }
         
       ] 
@@ -32,14 +32,14 @@ export function LocalHackWeekJsx() {
     // },
     // need to add networking session details
     { 
-      day: 'Oct 3rd', 
+      day: 'Oct 03ʳᵈ', 
       events: [
         { title: 'Intro to APIs', time: '9:30:00 AM', date: '03-10-2024', location: 'CET-3 LAB' },
         { title: 'DSA+Resume Building', time: '1:00 PM', date: '03-10-2024', location: 'SH-2' }
       ] 
     },
     { 
-      day: 'Oct 4th', 
+      day: 'Oct 04ᵗʰ', 
       events: [
         { title: 'Why Hackathons?', time: '09:30 AM', date: '04-10-2024', location: 'SH-2' },
         { title: 'Intro to Cloud', time: '1:00 PM', date: '04-10-2024', location: 'SH-2' }
@@ -47,28 +47,28 @@ export function LocalHackWeekJsx() {
       ] 
     },
     { 
-      day: 'Oct 5th', 
+      day: 'Oct 05ᵗʰ', 
       events: [
         { title: 'Special Talk: How to Build better hacks at hackathons', time: '12:00 PM', date: '05-10-2024', location: 'Online' },
         { title: 'Computer Networking', time: '4:00 PM', date: '05-10-2024', location: 'Online' }
       ] 
     },
     { 
-      day: 'Oct 9th', 
+      day: 'Oct 09ᵗʰ', 
       events: [
         { title: 'WebDev', time: '10:00 AM', date: '09-10-2024', location: 'Online' },
         { title: 'AI Toolz', time: '1:00 PM', date: '09-10-2024', location: 'Online' }
       ] 
     },
     { 
-      day: 'Oct 10th', 
+      day: 'Oct 10ᵗʰ', 
       events: [
         { title: 'ChatBot', time: '10:00 AM', date: '10-10-2024', location: 'Online' },
         { title: 'HardWare Session', time: '01:00 PM', date: '10-10-2024', location: 'Online' }
       ] 
     },
     { 
-      day: 'Oct 11th', 
+      day: 'Oct 11ᵗʰ', 
       events: [
         { title: 'How to use Docs/read codebase', time: '11:30 AM', date: '11-10-2024', location: 'Online' },
         { title: 'Closing Ceremony', time: '4:30 PM', date: '11-10-2024', location: 'Online' }
