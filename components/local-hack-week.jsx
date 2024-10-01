@@ -4,7 +4,6 @@ import React from 'react'
 import { MapPin , Clock } from 'lucide-react'
 import { Button } from "@/components/ui/button"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
-import Link from 'next/link';
 
 export function LocalHackWeekJsx() {
   const days = [
