@@ -4,6 +4,7 @@ import React from 'react'
 import { MapPin , Clock } from 'lucide-react'
 import { Button } from "@/components/ui/button"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
+import Link from 'next/link';
 
 export function LocalHackWeekJsx() {
   const days = [
@@ -74,6 +75,7 @@ export function LocalHackWeekJsx() {
         { title: 'Closing Ceremony', time: '4:30 PM', date: '11-10-2024', location: 'Online' }
       ] 
     },
+    
     // Add more days and events as needed
   ];
   
@@ -117,12 +119,14 @@ export function LocalHackWeekJsx() {
           </div>
           <nav className="flex items-center space-x-2"> {/* Removed mr-8 to reduce right gap */}
             <a href="#schedule" className="text-white hover:text-yellow-400 text-xs md:text-sm">Schedule</a>
-            <Button 
-              onClick={() => window.open('https://lnxok5i37d8.typeform.com/to/e6A1y0Fu', '_blank')} 
-              className="bg-[#C9D9EB] text-black hover:bg-transparent hover:text-[#BDC8D4] border-2 border-transparent transition-all duration-300 h-8 px-3 sm:h-9 sm:px-4" 
-            >
-              Register
-            </Button>
+            <div className="flex justify-center items-center">
+              <Button 
+                onClick={() => window.open('https://lnxok5i37d8.typeform.com/to/e6A1y0Fu', '_blank')} 
+                className="bg-[#C9D9EB] text-black hover:bg-transparent hover:text-[#BDC8D4] border-2 border-transparent transition-all duration-300 h-8 px-3 sm:h-9 sm:px-4" 
+              >
+                Register
+              </Button>
+            </div>
             <Button 
               onClick={() => window.open('https://chat.whatsapp.com/IEsumqsXO0PB15tE4WRSTz', '_blank')}
               className="border-2 border-[#C9D9EB] text-[#C9D9EB] bg-transparent transition-all duration-300 h-8 px-3 sm:h-9 sm:px-4 hover:bg-[#C9D9EB] hover:text-black"
@@ -155,6 +159,15 @@ export function LocalHackWeekJsx() {
               <p className="text-lg mb-4 text-justify text-[#C9D9EB]">
               It&apos;s an opportunity to learn new skills, build amazing projects, and connect with like-minded individuals passionate about technology. Completely free and open to anyone, anywhere join us for an exciting week of coding, creativity, and collaboration!
               </p>
+              <div className="flex items-center justify-start">
+                <p className="mr-4 text-lg font-medium">Watch our streams at:</p>
+                <Button 
+                  onClick={() => window.open('https://www.youtube.com/@hackerabad', '_blank')} 
+                  className="bg-[#FF1D1D] text-[#FFFFFF] hover:bg-transparent hover:text-[#BDC8D4] border-2 border-transparent transition-all duration-300 h-8 px-3 sm:h-9 sm:px-4" 
+                >
+                  Hackerabad&apos;s YT
+                </Button>
+              </div>
             </div>
           </section>
 
@@ -163,7 +176,7 @@ export function LocalHackWeekJsx() {
             <p className="text-lg mb-4 text-center text-[#C9D9EB] max-w-xl mx-auto">
               Everyday we have a variety of live sessions for you to tune into and learn more about. Click below to see each day&apos;s schedule.
             </p>
-            <p className="text-lg mb-4 text-center text-[#C9D9EB] max-w-xl mx-auto font-bold">
+            <p className="text-lg mb-4 text-center text-[#FFADAD] max-w-xl mx-auto font-bold">
         Schedules & timings may change and will be updated on the website.
     </p>
 
@@ -222,6 +235,15 @@ export function LocalHackWeekJsx() {
                 <AccordionTrigger className="text-[#C9D9EB]">Is it free to join?</AccordionTrigger>
                 <AccordionContent className="text-[#FED140]">
                   Yes, Local Hack Week is completely free to join. All you need is a computer and an internet connection.
+                </AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="item-4">
+                <AccordionTrigger className="text-[#C9D9EB]">Where can I watch the online streams?</AccordionTrigger>
+                <AccordionContent className="text-[#FED140]">
+                  You can watch the online streams at - &nbsp;
+                  <Button onClick={() => window.open('https://www.youtube.com/@hackerabad', '_blank')} className="bg-[#FF4747] text-[#FFFFFF] hover:bg-transparent hover:text-[#BDC8D4] border-2 border-transparent transition-all duration-300 h-8 px-3 sm:h-9 sm:px-4">
+                    Hackerabad&apos;s YT
+                  </Button>
                 </AccordionContent>
               </AccordionItem>
             </Accordion>
