@@ -31,13 +31,7 @@ export function LocalHackWeekJsx() {
     //   ] 
     // },
     // need to add networking session details
-    { 
-      day: 'Oct 03ʳᵈ', 
-      events: [
-        { title: 'Intro to APIs', time: '9:30:00 AM', date: '03-10-2024', location: 'CET-3 LAB' },
-        { title: 'DSA+Resume Building', time: '1:00 PM', date: '03-10-2024', location: 'SH-2' }
-      ] 
-    },
+    
     { 
       day: 'Oct 04ᵗʰ', 
       events: [
@@ -51,6 +45,13 @@ export function LocalHackWeekJsx() {
       events: [
         { title: 'Special Talk: How to Build better hacks at hackathons', time: '12:00 PM', date: '05-10-2024', location: 'Online' },
         { title: 'Computer Networking', time: '4:00 PM', date: '05-10-2024', location: 'Online' }
+      ] 
+    },
+    { 
+      day: 'Oct 08ᵗʰ', 
+      events: [
+        { title: 'Intro to APIs', time: '9:30:00 AM', date: '03-10-2024', location: 'CET-3 LAB' },
+        { title: 'DSA+Resume Building', time: '1:00 PM', date: '03-10-2024', location: 'SH-2' }
       ] 
     },
     { 
