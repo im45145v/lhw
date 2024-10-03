@@ -50,8 +50,8 @@ export function LocalHackWeekJsx() {
     { 
       day: 'Oct 08ᵗʰ', 
       events: [
-        { title: 'Intro to APIs', time: '9:30:00 AM', date: '03-10-2024', location: 'CET-3 LAB' },
-        { title: 'DSA+Resume Building', time: '1:00 PM', date: '03-10-2024', location: 'SH-2' }
+        { title: 'Intro to APIs', time: '9:30:00 AM', date: '08-10-2024', location: 'CET-3 LAB' },
+        { title: 'DSA+Resume Building', time: '1:00 PM', date: '08-10-2024', location: 'SH-2' }
       ] 
     },
     { 
