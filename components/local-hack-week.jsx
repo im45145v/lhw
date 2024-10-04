@@ -35,8 +35,8 @@ export function LocalHackWeekJsx() {
     { 
       day: 'Oct 04ᵗʰ', 
       events: [
-        { title: 'Why Hackathons?', time: '09:30 AM', date: '04-10-2024', location: 'SH-2' },
-        { title: 'Intro to Cloud', time: '1:00 PM', date: '04-10-2024', location: 'SH-2' }
+        { title: 'Why Hackathons?', time: '09:30 AM', date: '04-10-2024', location: 'BioTech SH' },
+        { title: 'Intro to Cloud', time: '1:00 PM', date: '04-10-2024', location: 'BioTech S' }
         // { title: 'Open Source', time: '1:00 PM', date: '04-10-2024', location: 'SH-2' }
       ] 
     },
@@ -50,8 +50,8 @@ export function LocalHackWeekJsx() {
     { 
       day: 'Oct 08ᵗʰ', 
       events: [
-        { title: 'Intro to APIs', time: '9:30:00 AM', date: '08-10-2024', location: 'CET-3 LAB' },
-        { title: 'DSA+Resume Building', time: '1:00 PM', date: '08-10-2024', location: 'SH-2' }
+        { title: 'Intro to APIs', time: '9:30:00 AM', date: '08-10-2024', location: 'Online' },
+        { title: 'DSA+Resume Building', time: '1:00 PM', date: '08-10-2024', location: 'Online' }
       ] 
     },
     { 
