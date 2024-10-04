@@ -36,7 +36,7 @@ export function LocalHackWeekJsx() {
       day: 'Oct 04ᵗʰ', 
       events: [
         { title: 'Why Hackathons?', time: '09:30 AM', date: '04-10-2024', location: 'BioTech SH' },
-        { title: 'Intro to Cloud', time: '1:00 PM', date: '04-10-2024', location: 'BioTech S' }
+        { title: 'Intro to Cloud', time: '1:00 PM', date: '04-10-2024', location: 'BioTech SH' }
         // { title: 'Open Source', time: '1:00 PM', date: '04-10-2024', location: 'SH-2' }
       ] 
     },
@@ -79,8 +79,8 @@ export function LocalHackWeekJsx() {
     // Add more days and events as needed
   ];
   
-  const [activeDay, setActiveDay] = React.useState(days[0].day); // Default to the first day
-  const [activeEvents, setActiveEvents] = React.useState(days[0].events); // Default events
+  const [activeDay, setActiveDay] = React.useState(days[2].day); // Default to the first day
+  const [activeEvents, setActiveEvents] = React.useState(days[2].events); // Default events
 
   const handleDayClick = (day) => {
     setActiveDay(day.day);
