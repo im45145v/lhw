@@ -44,43 +44,50 @@ export function LocalHackWeekJsx() {
       day: 'Oct 05ᵗʰ', 
       events: [
         { title: 'Special Talk: How to Build better hacks at hackathons', time: '12:00 PM', date: '05-10-2024', location: 'Online' },
-        { title: 'Computer Networking', time: '4:00 PM', date: '05-10-2024', location: 'Online' }
+      ] 
+    },
+    { 
+      day: 'Oct 06ᵗʰ', 
+      events: [
+        { title: 'Computer Networking', time: '02:30 PM', date: '06-10-2024', location: 'Online' },
       ] 
     },
     { 
       day: 'Oct 08ᵗʰ', 
       events: [
-        { title: 'Intro to APIs', time: '9:30:00 AM', date: '08-10-2024', location: 'Online' },
-        { title: 'DSA+Resume Building', time: '1:00 PM', date: '08-10-2024', location: 'Online' }
+        { title: 'Intro to APIs', time: '2:30 PM', date: '08-10-2024', location: 'Online' },
+        { title: 'DSA+Resume Building', time: '7:00 PM', date: '08-10-2024', location: 'Online' }
       ] 
     },
     { 
       day: 'Oct 09ᵗʰ', 
       events: [
-        { title: 'WebDev', time: '10:00 AM', date: '09-10-2024', location: 'Online' },
-        { title: 'AI Toolz', time: '1:00 PM', date: '09-10-2024', location: 'Online' }
+        { title: 'AI Toolz', time: '02:00 PM', date: '09-10-2024', location: 'Online' },
+        { title: 'WebDev', time: '07:00 PM', date: '09-10-2024', location: 'Online' },
+        
       ] 
     },
     { 
       day: 'Oct 10ᵗʰ', 
       events: [
-        { title: 'ChatBot', time: '10:00 AM', date: '10-10-2024', location: 'Online' },
-        { title: 'HardWare Session', time: '01:00 PM', date: '10-10-2024', location: 'Online' }
+        
+        { title: 'HardWare Session', time: '01:00 PM', date: '10-10-2024', location: 'Online' },
+        { title: 'ChatBot', time: '07:00 PM', date: '10-10-2024', location: 'Online' },
       ] 
     },
     { 
       day: 'Oct 11ᵗʰ', 
       events: [
-        { title: 'How to use Docs/read codebase', time: '11:30 AM', date: '11-10-2024', location: 'Online' },
-        { title: 'Closing Ceremony', time: '4:30 PM', date: '11-10-2024', location: 'Online' }
+        { title: 'How to use Docs/read codebase', time: '02:30 PM', date: '11-10-2024', location: 'Online' },
+        { title: 'Closing Ceremony', time: '05:30 PM', date: '11-10-2024', location: 'Online' }
       ] 
     },
     
     // Add more days and events as needed
   ];
   
-  const [activeDay, setActiveDay] = React.useState(days[2].day); // Default to the first day
-  const [activeEvents, setActiveEvents] = React.useState(days[2].events); // Default events
+  const [activeDay, setActiveDay] = React.useState(days[3].day); // Default to the first day
+  const [activeEvents, setActiveEvents] = React.useState(days[3].events); // Default events
 
   const handleDayClick = (day) => {
     setActiveDay(day.day);
