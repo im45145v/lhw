@@ -86,8 +86,8 @@ export function LocalHackWeekJsx() {
     // Add more days and events as needed
   ];
   
-  const [activeDay, setActiveDay] = React.useState(days[3].day); // Default to the first day
-  const [activeEvents, setActiveEvents] = React.useState(days[3].events); // Default events
+  const [activeDay, setActiveDay] = React.useState(days[5].day); // Default to the first day
+  const [activeEvents, setActiveEvents] = React.useState(days[5].events); // Default events
 
   const handleDayClick = (day) => {
     setActiveDay(day.day);
