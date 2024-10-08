@@ -62,7 +62,7 @@ export function LocalHackWeekJsx() {
     { 
       day: 'Oct 09ᵗʰ', 
       events: [
-        { title: 'AI Toolz', time: '02:00 PM', date: '09-10-2024', location: 'Online' },
+        { title: 'AI Toolz', time: '02:30 PM', date: '09-10-2024', location: 'Online' },
         { title: 'WebDev', time: '07:00 PM', date: '09-10-2024', location: 'Online' },
         
       ] 
@@ -86,8 +86,8 @@ export function LocalHackWeekJsx() {
     // Add more days and events as needed
   ];
   
-  const [activeDay, setActiveDay] = React.useState(days[5].day); // Default to the first day
-  const [activeEvents, setActiveEvents] = React.useState(days[5].events); // Default events
+  const [activeDay, setActiveDay] = React.useState(days[6].day); // Default to the first day
+  const [activeEvents, setActiveEvents] = React.useState(days[6].events); // Default events
 
   const handleDayClick = (day) => {
     setActiveDay(day.day);
