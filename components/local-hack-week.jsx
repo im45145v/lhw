@@ -79,7 +79,12 @@ export function LocalHackWeekJsx() {
       day: 'Oct 11ᵗʰ', 
       events: [
         { title: 'How to use Docs/read codebase', time: '02:30 PM', date: '11-10-2024', location: 'Online' },
-        { title: 'Closing Ceremony', time: '05:30 PM', date: '11-10-2024', location: 'Online' }
+      ] 
+    },
+    { 
+      day: 'Oct 14ᵗʰ', 
+      events: [
+        { title: 'Closing Ceremony', time: '05:30 PM', date: '14-10-2024', location: 'Online' }
       ] 
     },
     
